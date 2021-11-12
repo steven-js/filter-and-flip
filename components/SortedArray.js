@@ -1,14 +1,18 @@
 import CatItem from './CatItem'
+import { Flipped } from 'react-flip-toolkit'
 
 
 
 export default function SortedArray({ data }) {
 
     return (
-        <>
-            {data.map(s => (
-                <CatItem key={s.id + 2} data={s} />
-            ))}
-        </>
+        <Flipped flipId="sortedArray" >
+            <div>
+                {data.map(s => (
+                    <CatItem key={s.id} data={s} />
+                ))}
+
+            </div>
+        </Flipped>
     )
 }

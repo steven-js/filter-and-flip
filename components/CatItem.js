@@ -7,7 +7,7 @@ export default function CatItem({ data }) {
     const { title, bodyCopy, id } = data
 
     return (
-        <Flipped flipId={id} key={bodyCopy}>
+        <Flipped flipId={id} >
             <li
                 className={styles.card}>
                 <h2>{title}</h2>
